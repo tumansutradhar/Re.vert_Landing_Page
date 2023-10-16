@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar start */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    font-size: 1.5rem;
+}
+
+/* navbar end */
+
+/* hero section start */
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text h1 {
+    font-size: 20rem;
+}
+
+.text p {
+    font-size: 2.15rem;
+}
+
+.text button {
+    width: 130px;
+    height: 43px;
+    border: none;
+    border-radius: 50px;
+}
+
+/* hero section end */
+
+/* card section start */
+
+
+
+/* card section end */
