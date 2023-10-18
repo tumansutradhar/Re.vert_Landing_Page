@@ -11,35 +11,43 @@
     align-items: center;
     height: 70px;
     font-size: 1.5rem;
+    color: #403F2B;
+}
+
+.navbar p {
+    cursor: pointer;
 }
 
 /* navbar end */
 
 /* hero section start */
 
-.content {
+.hero {
     position: relative;
     text-align: center;
 }
 
-.content img {
+.hero img {
     width: 100%;
     height: 100%;
 }
 
-.content .text {
+.hero .text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 1.1;
 }
 
 .text h1 {
     font-size: 20rem;
+    color: #FFFDC3;
 }
 
 .text p {
     font-size: 2.15rem;
+    font-weight: 900;
 }
 
 .text button {
@@ -47,12 +55,274 @@
     height: 43px;
     border: none;
     border-radius: 50px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.text button:hover {
+    background-color: #403F2B;
+    color: white;
+    transition: .5s;
+}
+
+.text .herotxt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    color: white;
 }
 
 /* hero section end */
 
 /* card section start */
 
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    height: 798px;
+    color: #403F2B;
+}
 
+.cardtext p {
+    font-size: 2.25rem;
+}
+
+.card .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    text-align: center;
+}
+
+.cardimg {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cardimg img {
+    border: none;
+    border-radius: 25px;
+}
+
+.cardimg p {
+    font-size: 1.25rem;
+    line-height: 2;
+}
 
 /* card section end */
+
+/* content section start */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 615px;
+    background-color: #C4C197;
+}
+
+.contenttext {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contenttext h1 {
+    font-size: 4rem;
+    color: #403F2B;
+}
+
+.contenttext p {
+    font-size: 1.5rem;
+    color: #403F2B;
+}
+
+.contentimg img {
+    border: none;
+    border-radius: 25px;
+}
+
+.contenttext button {
+    width: 130px;
+    height: 43px;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #403F2B;
+    color: #DDDDCC;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.contenttext button:hover {
+    background-color: transparent;
+    color: #403F2B;
+    border: 1px solid #403F2B;
+    transition: .5s;
+}
+
+/* content section end */
+
+/* collection section start */
+
+.collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 713px;
+    gap: 35px;
+}
+
+.collntext h1 {
+    font-size: 2.25rem;
+    color: #403F2B;
+}
+
+.collection .collnimg {
+    display: flex;
+    gap: 45px;
+}
+
+.colln {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.colln img {
+    border: none;
+    border-radius: 25px;
+}
+
+.collntxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 285px;
+}
+
+.collntxt h1 {
+    font-size: 4rem;
+    color: #fffdc3;
+}
+
+.collntxt p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* collection section end */
+
+/* mission section start */
+
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    height: 911px;
+    background-color: #DDDDCC;
+    color: #403F2B;
+    text-align: center;
+}
+
+.mssntxt {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mssntxt h1 {
+    font-size: 4.15rem;
+}
+
+.mssntxt p {
+    font-size: 1.5rem;
+}
+
+.mssnbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.mssnicon p {
+    font-size: 1.15rem;
+}
+
+.mssnbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mssnbtn p {
+    font-size: 1.05rem;
+}
+
+.mssnbtn button {
+    border: none;
+    border-radius: 25px;
+    background-color: #403F2B;
+    color: white;
+    font-size: 1.05rem;
+    width: 130px;
+    height: 43px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.mssnbtn button:hover {
+    background-color: transparent;
+    border: 1px solid #403F2B;
+    color: #403F2B;
+    transition: .5s;
+}
+
+/* mission section end */
+
+/* slider section start */
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 599px;
+    background-color: #E8E59B;
+}
+
+.sliderimg img{
+    width: 324px;
+    border: none;
+    border-radius: 25px;
+}
+
+/* slider section end */
+
+/*  */
+
+.footer {
+    height: 650px;
+    background-color: #E8E59B;
+}
+
+/*  */
