@@ -192,14 +192,23 @@
 }
 
 .colln {
+    width: 540px;
+    height: 540px;
     position: relative;
+    border: none;
+    border-radius: 25px;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .colln img {
-    border: none;
-    border-radius: 25px;
+    transition: 1s;
+}
+
+.colln img:hover {
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .collntxt {
@@ -223,7 +232,6 @@
     font-size: 1.5rem;
     color: white;
 }
-
 
 /* collection section end */
 
@@ -305,24 +313,157 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 50px;
     height: 599px;
     background-color: #E8E59B;
 }
 
-.sliderimg img{
+.slidertxt {
+    text-align: center;
+}
+
+.slidertxt .p1 {
+    font-size: 2rem;
+}
+
+.slidertxt .p2 {
+    font-size: 4rem;
+}
+
+.slidercard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.sliderimg {
+    position: relative;
+    cursor: pointer;
+}
+
+.sliderimg img {
+    display: block;
     width: 324px;
-    border: none;
     border-radius: 25px;
+}
+
+.flowtxt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    background-color: #403F2B;
+    border-radius: 25px;
+}
+
+.sliderimg:hover .flowtxt {
+    opacity: 1;
+}
+
+.flowtxt p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* slider section end */
 
-/*  */
+/* info section start */
 
-.footer {
-    height: 650px;
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 450px;
     background-color: #E8E59B;
+    padding: 50px 150px;
+    color: #403F2B;
 }
 
-/*  */
+.infohead {
+    font-size: 3.15rem;
+}
+
+.infodetail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infopara p {
+    font-size: 1.5rem;
+}
+
+.infopara {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoinput{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoinput label {
+    font-size: 1.25rem;
+}
+
+.infoinput input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #403F2B;
+    width: 400px;
+    box-sizing: border-box;
+    width: 180%;
+    outline: none;
+}
+
+.infoinput input:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #403F2B;
+}
+
+.infoinput button {
+    width: 130px;
+    height: 43px;
+    border-radius: 25px;
+    color: #403F2B;
+    border: 1px solid #403F2B;
+    background-color: transparent;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.infoinput button:hover {
+    opacity: .7;
+    transition: .5s;
+}
+
+.infomenu {
+    display: flex;
+    gap: 50px;
+}
+
+.menutxt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menutxt p {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+/* info section end */
