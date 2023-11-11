@@ -97,6 +97,7 @@
     justify-content: center;
     align-items: center;
     gap: 45px;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -107,6 +108,7 @@
 }
 
 .cardimg img {
+    width: 310px;
     border: none;
     border-radius: 25px;
 }
@@ -181,6 +183,13 @@
     gap: 35px;
 }
 
+.collnimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .collntext h1 {
     font-size: 2.25rem;
     color: #403F2B;
@@ -192,8 +201,8 @@
 }
 
 .colln {
-    width: 540px;
-    height: 540px;
+    width: 410px;
+    height: 410px;
     position: relative;
     border: none;
     border-radius: 25px;
@@ -242,6 +251,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 50px;
     height: 911px;
     background-color: #DDDDCC;
@@ -336,6 +346,7 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .sliderimg {
@@ -467,3 +478,50 @@
 }
 
 /* info section end */
+
+
+.contentimg img {
+    border: none;
+    border-radius: -37px;
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+@media (max-width:1046px) {
+    .text h1 {
+        font-size: 15rem;
+        color: #FFFDC3;
+    }
+    .mssnbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:790px) {
+    .text h1 {
+        font-size: 12rem;
+        color: #FFFDC3;
+    }
+}
+@media (max-width:660px) {
+    .text h1 {
+        font-size: 10rem;
+        color: #FFFDC3;
+    }
+    .text p{
+        font-size: 1.2rem;
+    }
+    .text button {
+        width: 77px;
+        height: 38px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.05rem;
+        cursor: pointer;
+        transition: .5s;
+        font-size: 12px;
+    }
+}
